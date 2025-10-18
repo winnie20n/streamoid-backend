@@ -1,6 +1,6 @@
-# 🚀 Streamoid Product CSV Parser (FastAPI + SQLite)
+# Streamoid Product CSV Parser (FastAPI + SQLite)
 
-## ✅ Features
+## Features
 - Upload product data using CSV file  
 - Automatically skip duplicate SKUs  
 - Validate data before saving (e.g., price ≤ mrp)  
@@ -10,7 +10,7 @@
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - **Backend:** FastAPI  
 - **Database:** SQLite (via SQLAlchemy ORM)  
 - **Language:** Python 3  
@@ -18,7 +18,7 @@
 
 ---
 
-## 🧩 Project Structure
+##  Project Structure
 ```
 streamoid-backend/
 ├── main.py
@@ -32,22 +32,22 @@ streamoid-backend/
 
 ---
 
-## 🪄 Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Create & Activate Virtual Environment
+### Create & Activate Virtual Environment
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### 2️⃣ Install Dependencies
+### nstall Dependencies
 ```bash
 pip install fastapi uvicorn sqlalchemy python-multipart pydantic
 ```
 
 ---
 
-## ▶️ Run the Backend Server
+## Run the Backend Server
 ```bash
 uvicorn main:app --reload
 ```
@@ -67,7 +67,7 @@ You should see:
 
 ---
 
-## 📤 Upload CSV Endpoint
+## Upload CSV Endpoint
 
 ### **POST /upload**
 Upload your CSV file to add products.
@@ -97,7 +97,7 @@ curl -X POST -F "file=@products.csv" http://localhost:8000/upload
 
 ---
 
-## 📦 Get All Products
+## Get All Products
 
 ### **GET /products**
 Returns all stored products.  
@@ -108,7 +108,7 @@ http://localhost:8000/products
 
 ---
 
-## 🔍 Search Products
+## Search Products
 
 ### **GET /products/search**
 Search using brand, color, or name.
@@ -138,13 +138,11 @@ Search using brand, color, or name.
 
 ---
 
-## 🧠 Notes
+## Notes
 - Duplicate SKUs are automatically skipped  
 - You can view and test all endpoints at `/docs`  
 - Works fully offline (no external DB needed)
 
 ---
 
-## 🧑‍💻 Author
-**K. Kumar**  
-🎯 Streamoid Take-Home Assignment — Backend (FastAPI)
+
